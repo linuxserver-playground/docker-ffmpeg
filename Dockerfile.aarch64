@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # build stage
-FROM ghcr.io/linuxserver/baseimage-ubuntu:arm64v8-resolute AS buildstage
+FROM ghcr.io/linuxserver-playground/baseimage-ubuntu:arm64v8-resolute AS buildstage
 
 # set version label
 ARG FFMPEG_VERSION
@@ -754,7 +754,7 @@ RUN \
     /buildout/usr/share/fonts/
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-ubuntu:arm64v8-resolute
+FROM ghcr.io/linuxserver-playground/baseimage-ubuntu:arm64v8-resolute
 
 # Add files from binstage
 COPY --from=buildstage /buildout/ /

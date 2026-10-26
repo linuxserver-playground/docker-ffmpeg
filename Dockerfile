@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # build stage
-FROM ghcr.io/linuxserver/baseimage-ubuntu:resolute AS buildstage
+FROM ghcr.io/linuxserver-playground/baseimage-ubuntu:resolute AS buildstage
 
 # set version label
 ARG FFMPEG_VERSION
@@ -1061,7 +1061,7 @@ RUN \
     /buildout/etc/OpenCL/vendors/nvidia.icd
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-ubuntu:resolute
+FROM ghcr.io/linuxserver-playground/baseimage-ubuntu:resolute
 
 # Add files from binstage
 COPY --from=buildstage /buildout/ /
