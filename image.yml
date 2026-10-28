@@ -6,8 +6,8 @@ summary: A complete, cross-platform solution to record, convert and stream audio
 
 upstream:
   version:
-    type: command
-    run: echo 9.0.2-cli
+    type: static
+    version: 9.0.2-cli
 
 release:
   branch: master
