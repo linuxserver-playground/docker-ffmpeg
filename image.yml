@@ -1,6 +1,7 @@
 # The manifest for docker-ffmpeg. Schema: https://github.com/linuxserver-playground/builder/blob/main/schemas/image.schema.json
 schema: 1
 name: ffmpeg
+kind: tool
 
 summary: A complete, cross-platform solution to record, convert and stream audio and video.
 
