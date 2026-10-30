@@ -1,0 +1,2 @@
+FFmpeg donations: https://ffmpeg.org/donations.html
+GitHub Sponsors: https://github.com/sponsors/FFmpeg
